@@ -8,10 +8,10 @@ import { UserListComponent } from './user-list/user-list.component';
 
 const routes: Routes = [
 {path : 'accueil', component : AcceuilComponent},
-{path : '', component : AcceuilComponent},
+{path:'', redirectTo:'accueil', pathMatch:'full'},
 {path : 'librairie', component : DocumentListComponent },
-{path : 'utilisateurs', component : UserListComponent }
-  
+{path : 'utilisateurs', component : UserListComponent },
+{path:'**', redirectTo:'home', pathMatch:'full'}
 ];
 
 @NgModule({
