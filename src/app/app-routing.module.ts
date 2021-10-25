@@ -11,7 +11,7 @@ const routes: Routes = [
 {path:'', redirectTo:'accueil', pathMatch:'full'},
 {path : 'librairie', component : DocumentListComponent },
 {path : 'utilisateurs', component : UserListComponent },
-{path:'**', redirectTo:'home', pathMatch:'full'}
+{path:'**', redirectTo:'accueil', pathMatch:'full'}
 ];
 
 @NgModule({
