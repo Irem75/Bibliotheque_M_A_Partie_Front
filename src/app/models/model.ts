@@ -11,7 +11,7 @@ export class User {
 	   age : Number ;
        Statut : String ;
        role :  String ;
-	   documents : [] ;
+	   documents : Document[] ;
 
 }
 
