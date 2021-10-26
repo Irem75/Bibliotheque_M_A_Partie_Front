@@ -10,20 +10,23 @@ import { UserService } from '../services/user.service';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
+
    public usersList : User[];
+
   constructor(private userService : UserService) { }
 
    ngOnInit(): void {
-    this.affichierUtlisateurs ();
+    this.userService.getUserList().subscribe({
+     
+      next  : users => {
+        this.usersList = users;
+        console.log('here is the data', users);
+       },
+      error : catchError(() => throwError('User not found'))
+     })
   }
 
-   public affichierUtlisateurs () {
 
-   this.userService.getUserList().subscribe({
-     next  : users => this.usersList = users,
-     error : catchError(() => throwError('User not found'))
-    })
-   }
 
 
 }

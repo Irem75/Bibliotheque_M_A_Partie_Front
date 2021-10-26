@@ -16,7 +16,7 @@ export class UserService {
    }
 
     public getUserList() : Observable<User[]> {
-
+      console.log('I point into the user service');
       return this.http.get<User[]>(this.usersUrl);
     }
 
