@@ -1,1 +1,11 @@
-<p>document-list works!  ccc</p>
+<ul class="tilesWrap" *ngFor =" let document of documents">
+	<li>
+		<h2>{{document.id}}</h2>
+		<h3>Title {{document.titre}}</h3>
+		<h4> {{document.ref}}</h4>
+		<h5> {{document.image.type_Image}}</h5>
+		
+		<button>Read more</button>
+	</li>
+	
+</ul>

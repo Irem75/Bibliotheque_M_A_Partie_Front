@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+
 
 @Injectable({
   providedIn: 'root'
@@ -14,15 +14,10 @@ export class DocumentService {
   constructor(private http :HttpClient) {
    
    }
-   public getDocumentList () : Observable<Document[]> {
+   public getDocumentList() : Observable<any>   {
+   
 
-    return this.http.get<Document[]>(this.documentsUrl);
+    return this.http.get<any>(this.documentsUrl+'/documents');
    }
 
-   public getDocument (id : Number) : Observable<Document>  {
-
-    return this.http.get<Document>(this.documentsUrl+'/documents/document/${id}').pipe(
-      catchError(() => throwError('Document not found'))
-    );
-   }
 }
