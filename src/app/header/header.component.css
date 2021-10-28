@@ -29,7 +29,9 @@ button{
       margin-top: 1cm;
       color: #f0f9ff;
   }
-
+nav {
+  position: relative;
+}
   
 
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300';

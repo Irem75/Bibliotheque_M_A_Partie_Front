@@ -1,14 +1,22 @@
 .demo_wrap {
-    position: relative;
+     position: relative;
     
     overflow: hidden;
-    z-index: 1;
+    z-index: 1; 
+    min-height: 1010px;
+    
+
+    position: relative; 
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
     
 }
 
 /* You could use :after - it doesn't really matter */
 .demo_wrap::before{
-    content: ' ';
+    /* content: ' ';
     display: block;
     position: absolute;
     left: 0;
@@ -20,7 +28,17 @@
     opacity: 0.2;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-size: cover;
+    background-size: cover; */
+
+    content: "";
+      background-image: url('assets/images/theme.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.2;
 }
 
 html, body { height: 100%; }

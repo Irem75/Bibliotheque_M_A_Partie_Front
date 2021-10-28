@@ -1,56 +1,59 @@
-<div  > 
-  
+<nav>
   <ul class="lang-selector">
     <li>
-      <span data-hover="US" id="En" onclick="delete_cookie('website#lang')" >US</span>
-      <img src="assets\images\us.png" alt="anglais" >
+      <span data-hover="US" id="En" onclick="delete_cookie('website#lang')"
+        >US</span
+      >
+      <img src="assets\images\us.png" alt="anglais" />
     </li>
 
     <li>
       <span data-hover="FR" id="Fr" onclick="redirect()">FR</span>
-      <img src="assets\images\fr.png" alt="france" >
+      <img src="assets\images\fr.png" alt="france" />
     </li>
-</ul>
+  </ul>
 
-  
-    <mat-toolbar class="m" style="background-color: #282d32;" >
-
-      <a href="/" class="logo" title="Logobib">
-        <img src="assets\images\logobib2.jpg" alt="logobib" width="40" style="border-radius: 20%;" >
+  <mat-toolbar class="m" style="background-color: #282d32">
+    <a href="/" class="logo" title="Logobib">
+      <img
+        src="assets\images\logobib2.jpg"
+        alt="logobib"
+        width="40"
+        style="border-radius: 20%"
+      />
     </a>
-      
-        
-        <a mat-button class="companyName" routerLink="/">
-          <span  > Bibliothéque </span>
-        </a>
-        <span class="example-spacer"></span>
-        <div fxShow="true" fxHide.lt-md="true" >
-          <ul >
-            <li>
-              <a class="box" mat-button routerLink="/accueil">Acceuil</a>
-            </li>
-            <li>
-              <a class="box" mat-button routerLink="/librairie">Librairie</a>
-            </li>
-            <li>
-              <a class="box" mat-button routerLink="/utilisateurs">Utilisateurs</a>
-            </li>
-            <li>
-              <a class="box" mat-button routerLink="/Offres">Offres</a>
-           </li>
-            <li>
-              <a class="box" mat-button routerLink="/A-Propos-de-nous">A Propos de nous</a> 
-            </li>
-            
-            <li>
-              <a class="box" mat-button routerLink="/contact">Contact</a>
-            </li>
-            <li>
-              <a class="box" mat-button routerLink="/Sign_in_Up">Sign In/Up</a>
-            </li>
-          </ul>
 
-        </div>
-      </mat-toolbar>
-      
+    <a mat-button class="companyName" routerLink="/">
+      <span> Bibliothéque </span>
+    </a>
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <ul>
+        <li>
+          <a class="box" mat-button routerLink="/accueil">Acceuil</a>
+        </li>
+        <li>
+          <a class="box" mat-button routerLink="/librairie">Librairie</a>
+        </li>
+        <li>
+          <a class="box" mat-button routerLink="/utilisateurs">Utilisateurs</a>
+        </li>
+        <li>
+          <a class="box" mat-button routerLink="/Offres">Offres</a>
+        </li>
+        <li>
+          <a class="box" mat-button routerLink="/A-Propos-de-nous"
+            >A Propos de nous</a
+          >
+        </li>
+
+        <li>
+          <a class="box" mat-button routerLink="/contact">Contact</a>
+        </li>
+        <li>
+          <a class="box" mat-button routerLink="/Sign_in_Up">Sign In/Up</a>
+        </li>
+      </ul>
     </div>
+  </mat-toolbar>
+</nav>

@@ -1,35 +1,24 @@
-<<<<<<< HEAD
-<table mat-table class="mat-elevation-z8 demo-table" *ngFor="let user in usersList">
-    <!-- Position Column -->
-    <ng-container matColumnDef="Id">
-      <th mat-header-cell *matHeaderCellDef>Id</th>
-      <td mat-cell >{{user.id}}</td>
-    </ng-container>
-    <ng-container matColumnDef="Id">
-        <th mat-header-cell *matHeaderCellDef>Id</th>
-        <td mat-cell >{{user.genre}}</td>
-    </ng-container>
-    <ng-container matColumnDef="Id">
-        <th mat-header-cell *matHeaderCellDef>Id</th>
-        <td mat-cell >{{user.nom}}</td>
-    </ng-container>
-
-=======
-<table>
+<div class="container" id="table_user">
+  <table>
     <tr>
-      <th>Company</th>
-      <th>Contact</th>
-      <th>Country</th>
+      <th>Id</th>
+      <th>Nom</th>
+      <th>Prenom</th>
+      <th>Email</th>
+      <th>Age</th>
+      <th>Statut</th>
+      <th>Rôle</th>
+      <th>Editer</th>
+      <th>Supprimer</th>
     </tr>
-    <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>Maria Anders</td>
-      <td>Germany</td>
+    <tr *ngFor="let user of usersList">
+      <td>{{ user.id }}</td>
+      <td>{{ user.nom }}</td>
+      <td>{{ user.prenom }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.statut }}</td>
+      <td>{{ user.role }}</td>
     </tr>
-    <tr>
-      <td>Centro comercial Moctezuma</td>
-      <td>Francisco Chang</td>
-      <td>Mexico</td>
-    </tr>
->>>>>>> ca31082b788e01958dd65c6068533bef4b0d0e80
-</table>
+  </table>
+</div>

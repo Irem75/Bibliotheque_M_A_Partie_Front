@@ -1,0 +1,20 @@
+
+table{
+    width: 100%;
+    box-sizing: content-box;
+}
+tr{
+    border-bottom: 1px solid #ddd;
+    font-size: 1.5em;
+    z-index: 10;
+    position: relative;
+}
+tr:hover {
+    background-color: #bbe2e2;
+    
+}
+
+th, td{ 
+    text-align : center;
+    padding-left: 10px; 
+}

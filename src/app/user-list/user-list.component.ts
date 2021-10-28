@@ -16,6 +16,10 @@ export class UserListComponent implements OnInit {
   constructor(private userService : UserService) { }
 
    ngOnInit(): void {
+    this.loadUserData();
+  }
+
+  public loadUserData(){
     this.userService.getUserList().subscribe({
      
       next  : users => {
@@ -25,8 +29,6 @@ export class UserListComponent implements OnInit {
       error : catchError(() => throwError('User not found'))
      })
   }
-
-
 
 
 }
